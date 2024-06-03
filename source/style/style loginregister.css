@@ -1,45 +1,90 @@
 
 body {
-    font-family: Arial, sans-serif;
-    background-image: url("../img/circuito-blu-ad-alta-tecnologia-4k-hq_997534-681.jpg"); /* Reemplaza 'tu-imagen.jpg' con la URL de tu imagen */
-    background-size: cover;
-    background-position: center;
-  }
-  .login-container {
-    max-width: 400px;
-    margin: 109px auto;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 40px;
-    position: relative;
-    box-sizing: border-box;
-  }
-  .logo-dfs {
-    position: absolute;
-    top: -60px; /* Ajusta este valor según el tamaño de tu logo */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px; /* Ajusta el ancho según tu logo */
-    height: auto;
-  }
-  .form-group {
-    margin-bottom: 15px;
-  }
-  .form-group label {
-    display: block;
-    color: #666;
-  }
-  .form-group input[type="text"],
-  .form-group input[type="password"],
-  .form-group input[type="email"] {
-    width: calc(100% - 20px); /* Ajusta el ancho considerando el padding */
-    padding: 10px;
-    margin: 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
-  }
-  .form-group label.remember-me { display: inline-block; color: #333; }
-  .login-container button { width: 100%; background: #32cd32; color: #fff; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
-  .login-container button:hover { background: #28a745; }
-  .login-container a { text-decoration: none; color: #32cd32; display: block; text-align: center; margin-top: 15px; }
+  margin: 0;
+  padding: 0;
+  background: url('../img/circuito-blu-ad-alta-tecnologia-4k-hq_997534-681.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  position: relative;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 300px; /* Ajusta según sea necesario */
+}
+
+.login-box .logo {
+  position: absolute;
+  top: -70px; /* Ajusta para posicionar el logo */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px; /* Ajusta el tamaño según sea necesario */
+}
+
+.login-box h2 {
+  margin-top: 60px; /* Ajusta el margen para evitar superposición */
+  margin-bottom: 30px;
+  padding: 0;
+  color: #333;
+}
+
+.textbox {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.textbox input {
+  width: 100%;
+  padding: 10px;
+  background: #f0f0f0;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.checkbox {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.checkbox input {
+  margin-right: 10px;
+}
+
+.btn {
+  width: 100%;
+  background: #28a745;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background: #218838;
+}
+
+.login-box a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.login-box a:hover {
+  color: #28a745;
+}
